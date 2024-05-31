@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(86, 86, 165);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        margin: 0, 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(122, 122, 163);
+        font-size: 1rem;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 180px 0;
+    }
+
+    .firstSection>div {
+        width: 30%;
+        margin: 30px 0;
+    }
+
+    .leftSection {
+        font-size: 3rem;
+
+    }
+
+    .rightSection {}
+
+    .rightSection .devImg {
+        width: 400px;
+        height: 350px;
+        margin-top: -10px;
+
+
+
+    }
+
+    .rightSection img {
+        width: 80%;
+        margin: 50px 0;
+    }
+
+    .purple {
+        color: purple;
+    }
+
+    #element {
+        color: purple;
+    }
+
+    .secondSection {
+        width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-gray {
+        color: gray;
+    }
+
+    .secondSection .box {
+        background-color: aqua;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+
+    .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: aqua;
+        margin: 0 140px;
+    }
+
+    .topImg {
+        width: 70px;
+        position: relative;
+        top: -70px;
+        left: -19px;
+    }
+
+    .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+    }
+
+    .vertical-disc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 10px;
+    }
+
+    footer {
+        background: #41419a;
+        height: 233px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        padding: 23px 122px;
+    }
+
+    footer .footer-right {
+        text-align: center;
+        color: gray;
+        padding: 13px 0;
+    }
+
+    footer div ul li {
+        list-style-type: none;
+    }
+
+    .secondSection {
+        margin-top: 50px;
+    }
+
+    .secondSection-h {
+        margin-bottom: 100px;
+    }
+
+
+
+    .ai {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+        position: absolute;
+        z-index: 0;
+        width: 400px;
+        height: 150px;
+        margin-left: 37%;
+    }
+
+    .ai-layer {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        width: 400px;
+        height: 150px;
+        background-color: rgb(0, 0, 33);
+        margin-left: 37%;
+
+    }
+
+    .mssg {
+        display: flex;
+    }
+
+    .mssg input {
+        color: aliceblue;
+        width: 350px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid aqua;
+        background-color: rgb(0, 0, 33);
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .mssg button {
+        width: 100px;
+        font-size: 22px;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 33);
+        border: 1px solid aqua;
+        color: white;
+    }
+
+    .btn2 {
+        margin-left: 10px;
+    }
+
+    .eagle {
+        padding-right: 10px;
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .main-hrone {
+        color: aqua;
+        border: 1px solid aqua;
+    }
+
+    .chatBox {
+        margin-top: 100px;
+    }
+
+    .footer-hr {
+        border: 1px solid aqua;
+    }
+
+
+
+    hr {
+        border: 1px solid aqua;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mohd Seraj</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <hr class="main-hrone">
+        <div class="chatBox">
+            <div class="ai">
+                <span class="eagle" id="answer"> hello developer</span>
+                <div class="mssg">
+                    <input type="text" id="question" onclick="generator()">
+                    <button>go</button>
+                </div>
+            </div>
+            <div class="ai-layer" id="layer">
+                <span class="eagle" id="snedId">eagle kar</span>
+                <div class="mssg">
+                    <input type="text" id="ids">
+                    <button class="btn2" onclick="security()">go</button>
+                </div>
+            </div>
+        </div>
+        <section class="firstSection">
+            <div class="leftSection">Hii i am <span class="purple">Mohd Seraj</span>
+                <div>and i am passionate</div>
+                <div>Software developer</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection"><img class="devImg" src="/developer image/dev3dThree.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">I have done so far</span>
+            <h1 class="secondSection-h">Work Experience</h1>
+            <div class="box">
+                <div class="vertical"><img class="topImg" class="java" src="./developer image/java.png" alt="">
+                    <div class="vertical-title">java Programming</div>
+                    <div class="vertical-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint,
+                        perferendis.</div>
+                </div>
+                <div class="vertical"><img class="topImg" src="/developer image/salesforce.png" alt="">
+                    <div class="vertical-title">Salesforce Addminitrator</div>
+                    <div class="vertical-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint,
+                        perferendis.</div>
+                </div>
+                <div class="vertical"><img class="topImg" src="./developer image/salesforce.png" alt="">
+                    <div class="vertical-title">LWC (Light Web Component)</div>
+                    <div class="vertical-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint,
+                        perferendis.</div>
+                </div>
+                <div class="vertical"><img class="topImg" src="./developer image/js.png" alt="">
+                    <div class="vertical-title">FrontEnd Developer</div>
+                    <div class="vertical-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint,
+                        perferendis.</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <hr class="footer-hr">
+    <footer>
+        <div class="flex">
+            <h2>Developer Portfolio</h2>
+            <div class="first"></div>
+            <div class="second">
+                <ul class="one">
+                    <li>Salesforce</li>
+                    <li>Apex</li>
+                    <li>Light Web Component</li>
+                    <li>Addministrator</li>
+                </ul>
+            </div>
+            <div class="third">
+
+                <ul class="one">
+                    <li>Core Java</li>
+                    <li>Advanced Java </li>
+                    <li>Servlet</li>
+                    <li>Spring-Boot</li>
+                </ul>
+            </div>
+            <div class="fourth">
+
+                <ul class="one">
+                    <li>frontEnd</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            www.portfolio.com | All Right reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Salesforce developer ', 'java developer', 'web developer'],
+            typeSpeed: 100,
+        });
+
+
+
+
+
+
+        <!--javascrip-->
+
+        function security() {
+
+            const code = "1001";
+            const idcode = document.getElementById('ids').value;
+            const sendEle = document.getElementById('sendId');
+            const layerEle = document.getElementById('layer');
+            if (idcode == code) {
+                const x = alert("code successfully match");
+                utterance.text = x;
+                speechSynthesis.speak(utterance);
+                setTimeout(function () {
+
+                    layerEle.style.zIndex = '-1';
+                    layerEle.style.backgroundColor = 'red';
+                }, 2000);
+
+            } else {
+                alert = "sorry"
+
+            }
+        }
+
+        function generator() {
+
+            // access id
+            var que = document.getElementById('question').value;
+            var ans = document.getElementById('answer');
+            const utterance = new SpeechSynthesisUtterance();
+            utterance.lang = 'en-US';
+            // statement
+            if (que == 'alexa hii') {
+                ans.innerHTML = "hello";
+            }
+            if (que == 'alexa open youtube' || que == 'alexa please open the youtube' || que == 'alexa open the youtube') {
+
+                utterance.text = ans = "ok i am very close to open youtube please wait few sec...";
+
+                speechSynthesis.speak(utterance);
+                setTimeout(function () {
+                    window.open('https://www.youtube.com');
+                }, 2000);
+
+
+            }
+            if (que == 'alexa open the calculator' || que == 'alexa please open the calculator' || que == 'alexa please open calculator') {
+
+                ans = "Ok wait few second i will provide soon";
+                utterance.text = ans;
+                speechSynthesis.speak(utterance);
+                setTimeout(function () {
+                    window.open('https://www.google.com/calculator.net');
+                }, 2000);
+
+            }
+            if (que == 'alexa open the my instagram id' || que == 'alexa please open my insta id' || que == 'alexa open my insta id' || que == 'alexa open insta id') {
+
+                ans = 'please wait few sec...';
+                utterance.text = ans;
+                speechSynthesis.speak(utterance);
+                setTimeout(function () {
+
+                    window.open('https://www.instagram.com/im_seraj_1001');
+
+                }, 2000);
+
+
+            }
+            if (que == 'alexa open calculator' || que == 'alexa please open the calculator' || que == 'alexa open the calculator') {
+
+
+            }
+            if (que == 'open ') {
+
+            }
+            if (que == 'alexa open camera' || que == 'alexa please open the camera') {
+
+                ans.innerHTML = "ok";
+
+                function openCamera() {
+
+                    const camera = document.getElementById('camera');
+                    const video = document.getElementById('video');
+                    cameraEle.style.display = 'block';
+                    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                        navigator.mediaDevices.getUserMedia({ video: true })
+                            .then(stream => {
+                                video.srcObject = stream;
+                                video.play();
+                            })
+                            .catch(err => {
+                                console.error("error accessing camera", err);
+                            })
+                    }
+                    else {
+                        alert = 'camera not access';
+                    }
+                }
+            }
+            else {
+                ans.innerHTML = "sorry";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
